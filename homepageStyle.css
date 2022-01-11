@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap%27');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit';
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+
+}
+
+.content {
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: black;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span {
+    font-family: Cochin;
+    color: #ffce3a;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.content .textBox p {
+    font-family: Tahoma;
+    color: #4f4f4f;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #94c1fa;
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.menus {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.menus h1 {
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    color: black;
+    z-index: 1;
+}
+
+.menus p {
+    z-index: 1;
+}
+
+.menus .imgBox {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.menus .imgBox .lewzach {
+    max-width: 300px;
+}
+
+.menuFav {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.menuFav li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.menuFav li:hover {
+    transform: translateY(-15px);
+}
+
+.menu1 {
+    width: 70px;
+    border-radius: 5px;
+}
+
+.menu2 {
+    width: 105px;
+    border-radius: 5px;
+}
+
+.menu3 {
+    width: 70px;
+    border-radius: 5px;
+}
+
+.menuFav li img {
+    max-width: 105px;
+
+}
+
+.elipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffce3a;
+    border-radius: 75px 250px 150px;
+}
+
+.divMap {
+    margin-top: 5%;
+}
+
+.divMap h1 {
+    text-align: center;
+    position: flex;
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.divMap .map {
+    margin-top: 3%;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15%;
+}
+
+footer {
+    background-color: #ffce3a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 100%;
+}

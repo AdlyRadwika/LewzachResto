@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lewzach Home Page</title>
+    <link rel="stylesheet" href="homepageStyle.css">
+    <link rel="stylesheet" href="headerCSS.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <header class="header">
+            <nav class="navbar navbar-style">
+                <div class="container3">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                            <span class = "icon-bar"></span>
+                        </button>
+                        <a href=""><img class="logo" src="Image/Lewzach (1).png"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Homepage.html">Home</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+    
+        </header>
+
+        <div class="content">
+            <div class="textBox">
+                <h2>Memang Lezat<br>Karena <span>Lewzach</span></h2>
+                <p>Lewzach sudah berdiri selama beberapa tahun dan sedang berkembang.
+                    Perjuangan yang menghabiskan waktu bertahun-tahun dan awal mula kami sudah terukir dalam sejarah. 
+                </p>
+                <a href="AboutUs.html">Pelajari Lebih Lanjut</a>    
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="menus">
+        <h1>Menu Favorit</h1>
+        <div class="imgBox">
+            <img src="Image/burger.jpeg" class="img-circle lewzach">
+        </div>
+        <div class="elipse"></div>
+    <ul class="menuFav">
+        <li><img src="Image/burger.jpeg" data-toggle="tooltip" title="Burger" onclick="imgSlider('Image/burger.jpeg');changeElipseColor('#ffce3a');" class="menu1"></li>
+        <li><img src="Image/churros.jpeg" data-toggle="tooltip" title="Churros" onclick="imgSlider('Image/churros.jpeg');changeElipseColor('#da7928')" class="menu2"></li>
+        <li><img src="Image/applepie.jpg" data-toggle="tooltip" title="Apple Pie" onclick="imgSlider('Image/applepie.jpg');changeElipseColor('#f9dca1')" class="menu3"></li>
+    </ul>
+    </div>
+
+    <div class="divMap">
+        <h1>Temukan Kami</h1>
+        <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.81268902842!2d106.75957500313034!3d-6.285028641538992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ec1a804e8b85%3A0xd7bf80e1977cea07!2sUniversity%20of%20Indonesia!5e0!3m2!1sen!2sid!4v1624852547421!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+    
+
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.lewzach').src = anything;
+        }
+
+        function changeElipseColor(color){
+            const elipse = document.querySelector('.elipse');
+            elipse.style.background = color;
+        }        
+    </script>
+
+    <script type="text/script">
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+        });
+    </script>
+
+</body>
+<footer class="bg text-white mt-5">
+    <div class="container">
+     <div class="row">
+      <div class="col text-center pt-3">
+        <p>Group 3's Property</p>
+       <p>Copyright &copy; 2021.</p>
+      </div>
+     </div>
+    </div>
+</footer>
+</html>
